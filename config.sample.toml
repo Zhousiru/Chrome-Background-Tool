@@ -1,0 +1,5 @@
+[basic]
+
+# Path to your Chrome profile.
+# For Windows, it may be 'C:\Users\<Your Username>\AppData\Local\Google\Chrome\User Data\Default'.
+chrome_profile_path = ''
