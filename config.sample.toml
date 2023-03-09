@@ -1,5 +1,49 @@
 [basic]
-
 # Path to your Chrome profile.
 # For Windows, it may be 'C:\Users\<Your Username>\AppData\Local\Google\Chrome\User Data\Default'.
 chrome_profile_path = ''
+
+[bg.provider]
+# Name of the background image provider.
+# Available: 'bing', 'unplash', 'spotlight', 'custom'.
+name = 'bing'
+
+[bg.provider.custom]
+# Background image URL.
+url = ''
+# Or run a command which return the URL?
+cmd = ''
+
+[bg.resizer]
+# Only need to set one of `target_width` and `target_height`.
+# Keep another to 0.
+target_width = 3840
+target_height = 2160
+
+[bg.filter]
+# Set the blur radius of background image.
+blur_radius = 10
+# Set the saturation of background image.
+saturation = 1
+# Set the overlay color and opacity.
+overlay.color = '#000'
+overlay.opacity = 0.5
+
+[bg.sticker.image]
+# Set the position ratio of the sticker.
+position.x = 0.5
+position.y = 0.6
+# Set the position offset of the sticker.
+offset.x = 0
+offset.y = 0
+# Path to image.
+image_path = ''
+
+[bg.sticker.weather]
+position.x = 0.5
+position.y = 0.6
+offset.x = 0
+offset.y = 0
+# Weather location.
+location = ""
+layout = "{LOCATION} {WEATHER} {TEMP}"
